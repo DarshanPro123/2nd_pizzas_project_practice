@@ -18,6 +18,15 @@
   transition: all 0;
 }
 
+.card.sold-out {
+  color: #888;
+}
+
+.card.card.sold-out {
+  filter: grayscale();
+  opacity: 0.6;
+}
+
 .card:hover {
   transform: scale(1.2) rotate(12deg);
 }

@@ -6,10 +6,7 @@
   1.. any js javascript expression add to use "{}" currly brases
   2.. we can use so many methods in HTML usiing jsx to map, reduce , add  objects and array 
   in file of html
-  3.. used in component to more than one element in html so used <></> fragment of react in jsx.. 
-  
-  
-  
+  3.. used in component to more than one element in html so used <></> fragment of react in jsx..   
   
   */
 }
@@ -58,11 +55,14 @@ export const Pizza = () => {
   return (
     <>
       <div className="cards">
-        {pizzaData.map((data, index) => {
+        {pizzaData.map((data) => {
           return (
             <>
               {" "}
-              <div className="card" key={index}>
+              <div
+                className={`card ${data.soldOut ? "sold-out" : ""}`}
+                key={data.name}
+              >
                 <div className="img-card">
                   <img src={data.url} alt="" />
                 </div>
@@ -70,6 +70,7 @@ export const Pizza = () => {
                   <h1>{data.name}</h1>
                   <h4>{data.ingredients}</h4>
                   <p>${data.price}</p>
+                  <p>{data.soldOut ? "SOLD OUT" : ""}</p>
                 </div>
               </div>
             </>
