@@ -1,3 +1,7 @@
+{
+  /* <></> That's called fragments */
+}
+
 import "./App.css";
 import pizzaData from "../public/data";
 
@@ -30,7 +34,7 @@ export const Menu = () => {
         <h2>Our Menu</h2>
 
         {/* props example */}
-        <Pizza nme="pizzas" nmeprice="340" />
+        <Pizza nme="pizzas" nmeprice={100} />
       </main>{" "}
     </>
   );
