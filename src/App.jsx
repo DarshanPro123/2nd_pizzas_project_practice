@@ -28,27 +28,17 @@ export const Menu = () => {
     <>
       <main className="menu">
         <h2>Our Menu</h2>
-        <Pizza />
+
+        {/* props example */}
+        <Pizza nme="pizzas" nmeprice="340" />
       </main>{" "}
     </>
   );
 };
-export const Footer = () => {
-  const hour = new Date().getHours();
-  const openHour = 9;
-  const closeHour = 22;
-  const isOpen = hour >= openHour && hour <= closeHour;
-  console.log(isOpen); //that js logic using in jsx
-  return (
-    <>
-      <footer className="footer">
-        {" "}
-        <h1>we are best pizza supplier</h1>
-      </footer>
-    </>
-  );
-};
+
 export const Pizza = () => {
+  // console.log(nme, nmeprice);
+
   return (
     <>
       <div className="cards">
@@ -70,6 +60,22 @@ export const Pizza = () => {
           );
         })}
       </div>
+    </>
+  );
+};
+
+export const Footer = () => {
+  const hour = new Date().getHours();
+  const openHour = 9;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
+  console.log(isOpen); //that js logic using in jsx
+  return (
+    <>
+      <footer className="footer">
+        {" "}
+        <h1>we are best pizza supplier</h1>
+      </footer>
     </>
   );
 };

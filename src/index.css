@@ -66,7 +66,7 @@ body {
   display: block;
   content: "";
   height: 3px;
-  width: 14rem;
+  width: 12rem;
   background-color: #f28e0c;
   position: absolute;
   top: calc(50% - 2px);
@@ -89,26 +89,26 @@ body {
   gap: 4rem;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .menu h2 {
   display: inline-block;
   padding: 1rem 0.7rem;
-  border-bottom: 2px solid currentColor;
-  border-left: 2px solid currentColor;
-  border-right: 2px solid currentColor;
+  /* border-bottom: 2px solid currentColor;
+  border-top: 2px solid currentColor; */
   font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: all 0.5s;
   font-weight: 500;
-  box-shadow: -7px 22px 38px -7px rgba(0, 0, 0, 0.374);
-}
-
-.menu h2:hover {
-  border-bottom: 0;
-  border-top: 2px solid currentColor;
-  border-left: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  box-shadow: -7px -5px 59px -5px rgba(0, 0, 0, 0.374);
+  animation: rotate 4s infinite ease;
 }
 
 .menu > p {
