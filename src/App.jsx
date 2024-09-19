@@ -1,5 +1,17 @@
 {
-  /* <></> That's called React_fragments */
+  /* <></> That's called React_fragments 
+
+
+  some rules of jsx 
+  1.. any js javascript expression add to use "{}" currly brases
+  2.. we can use so many methods in HTML usiing jsx to map, reduce , add  objects and array 
+  in file of html
+  3.. used in component to more than one element in html so used <></> fragment of react in jsx.. 
+  
+  
+  
+  
+  */
 }
 
 import "./App.css";
