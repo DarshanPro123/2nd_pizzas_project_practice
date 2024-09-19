@@ -1,5 +1,5 @@
 {
-  /* <></> That's called fragments */
+  /* <></> That's called React_fragments */
 }
 
 import "./App.css";
