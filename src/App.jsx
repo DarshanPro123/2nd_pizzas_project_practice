@@ -38,8 +38,7 @@ export const Footer = () => {
   const openHour = 9;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
-  console.log(isOpen);
-
+  console.log(isOpen); //that js logic using in jsx
   return (
     <>
       <footer className="footer">
