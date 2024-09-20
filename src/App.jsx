@@ -51,31 +51,33 @@ export const Menu = () => {
 
 export const Pizza = () => {
   // console.log(nme, nmeprice);
+  const pizzasData = pizzaData;
 
   return (
     <>
       <div className="cards">
-        {pizzaData.map((data) => {
-          return (
-            <>
-              {" "}
-              <div
-                className={`card ${data.soldOut ? "sold-out" : ""}`}
-                key={data.name}
-              >
-                <div className="img-card">
-                  <img src={data.url} alt="" />
+        {pizzasData &&
+          pizzasData.map((data) => {
+            return (
+              <>
+                {" "}
+                <div
+                  className={`card ${data.soldOut ? "sold-out" : ""}`}
+                  key={data.name}
+                >
+                  <div className="img-card">
+                    <img src={data.url} alt="" />
+                  </div>
+                  <div className="content">
+                    <h1>{data.name}</h1>
+                    <h4>{data.ingredients}</h4>
+                    <p>${data.price}</p>
+                    <p>{data.soldOut ? "SOLD OUT" : ""}</p>
+                  </div>
                 </div>
-                <div className="content">
-                  <h1>{data.name}</h1>
-                  <h4>{data.ingredients}</h4>
-                  <p>${data.price}</p>
-                  <p>{data.soldOut ? "SOLD OUT" : ""}</p>
-                </div>
-              </div>
-            </>
-          );
-        })}
+              </>
+            );
+          })}
       </div>
     </>
   );
@@ -87,11 +89,24 @@ export const Footer = () => {
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
   console.log(isOpen); //that js logic using in jsx
+
+  if (!isOpen) return <h1 className="close">Shop Closed!!</h1>;
   return (
     <>
       <footer className="footer">
-        {" "}
-        <h1>we are best pizza supplier</h1>
+        {isOpen ? (
+          <div className="order">
+            <p>
+              We are open current , our closeing time is {closeHour}:00 . Come
+              Us to Online order.
+            </p>
+            <button className="btn">Order Now </button>
+          </div>
+        ) : (
+          <p>
+            We are happy to come in Our {openHour}:00 to {closeHour}:00 .
+          </p>
+        )}{" "}
       </footer>
     </>
   );

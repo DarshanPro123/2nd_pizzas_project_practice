@@ -8,7 +8,7 @@ const pizzaData = [
     soldOut: false,
   },
   {
-    url: "./public/pizzas/funghi.jpg",
+    url: "https://t4.ftcdn.net/jpg/08/19/10/05/360_F_819100501_shP347rEM058I34O0y9l4LvKlGfN77lq.jpg",
     name: "Pizza Margherita",
     ingredients: "Tomato and mozarella",
     price: 10,
@@ -16,7 +16,7 @@ const pizzaData = [
     soldOut: false,
   },
   {
-    url: "./public/pizzas/margherita.jpg",
+    url: "https://cdn.apartmenttherapy.info/image/upload/v1702399879/k/Photo/Recipes/2023-12-grandma-pizza/grandma-pizza-573-horizontal.jpg",
     name: "Pizza Spinaci",
     ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
     price: 12,
@@ -24,7 +24,7 @@ const pizzaData = [
     soldOut: false,
   },
   {
-    url: "./public/pizzas/prosciutto.jpg",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25o53BxC4OtRKLgM3e6ycnzy53kkqRLrWwQ&s",
     name: "Pizza Funghi",
     ingredients: "Tomato, mozarella, mushrooms, and onion",
     price: 12,
@@ -32,7 +32,7 @@ const pizzaData = [
     soldOut: false,
   },
   {
-    url: "./public/pizzas/salamino.jpg",
+    url: "https://www.ezcater.com/wp-content/uploads/sites/2/2017/10/shutterstock_570541132.jpg",
     name: "Pizza Salamino",
     ingredients: "Tomato, mozarella, and pepperoni",
     price: 15,

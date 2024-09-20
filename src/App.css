@@ -24,7 +24,7 @@
 
 .card.card.sold-out {
   filter: grayscale();
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .card:hover {
@@ -67,4 +67,56 @@
 .content p {
   font-size: 1.8rem;
   color: rgba(26, 24, 24, 0.675);
+}
+
+/* for Footer  */
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: rgb(187, 13, 13);
+  }
+
+  50% {
+    color: rgb(255, 132, 0);
+  }
+  75% {
+    color: rgb(203, 100, 9);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.close {
+  animation: colorChange 4s infinite ease;
+  font-size: 4rem;
+}
+
+@media (max-width: 440px) {
+  .cards {
+    margin: 0;
+  }
+  .card {
+    width: 400px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card .img-card {
+    width: 100%;
+  }
+  .img-card img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    gap: 10px;
+  }
 }
